@@ -1,0 +1,29 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Extension Builds
+web-ext-artifacts/
+*.zip
+*.crx
+*.xpi
+
+# Store Assets (nicht im Repo)
+/store/
+
+# Temporär
+*.tmp
+*.bak
