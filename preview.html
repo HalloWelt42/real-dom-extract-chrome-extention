@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Extractor - Vorschau</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 14px;
+        }
+
+        body.light { background: #fff; color: #333; }
+        body.dark { background: #1e1e1e; color: #d4d4d4; }
+
+        .toolbar {
+            position: sticky;
+            top: 0;
+            padding: 8px 16px;
+            border-bottom: 1px solid;
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            font-size: 13px;
+            z-index: 10;
+        }
+
+        body.light .toolbar { background: #f0f0f0; border-color: #ddd; }
+        body.dark .toolbar { background: #252542; border-color: #3a3a5c; }
+
+        .toolbar button {
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            font-family: inherit;
+        }
+
+        body.light .toolbar button { border: 1px solid #ccc; background: #fff; color: #333; }
+        body.dark .toolbar button { border: 1px solid #555; background: #1a1a2e; color: #d4d4d4; }
+
+        .toolbar button.active {
+            background: #4a6cf7;
+            color: #fff;
+            border-color: #4a6cf7;
+        }
+
+        .toolbar .info {
+            margin-left: auto;
+            font-size: 12px;
+            opacity: 0.6;
+        }
+
+        #rendered { padding: 20px; }
+        #source { padding: 20px; display: none; }
+
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            line-height: 1.6;
+            font-family: 'SF Mono', Menlo, Consolas, monospace;
+            font-size: 13px;
+        }
+
+        #plaintext { padding: 20px; }
+    </style>
+</head>
+<body>
+    <div class="toolbar" id="toolbar" style="display: none;">
+        <button id="btnRendered" class="active">Gerendert</button>
+        <button id="btnSource">Quellcode</button>
+        <span class="info" id="info"></span>
+    </div>
+    <div id="rendered"></div>
+    <div id="source"><pre id="sourceCode"></pre></div>
+    <div id="plaintext"><pre id="plainCode"></pre></div>
+
+    <script src="shared/i18n.js"></script>
+    <script src="preview.js"></script>
+</body>
+</html>
