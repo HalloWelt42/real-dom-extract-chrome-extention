@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Extractor Pro - Anleitung</title>
+    <style>
+        :root {
+            --bg: #2b2a27;
+            --bg-card: #35342f;
+            --bg-elevated: #3e3d37;
+            --border: #4a4843;
+            --text: #ece8e1;
+            --text-secondary: #b0ab9f;
+            --text-muted: #8a867e;
+            --accent: #d97706;
+        }
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                --bg: #f5f5f4;
+                --bg-card: #ffffff;
+                --bg-elevated: #f0eeeb;
+                --border: #d6d3d1;
+                --text: #1c1917;
+                --text-secondary: #57534e;
+                --text-muted: #a8a29e;
+            }
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            display: flex;
+            justify-content: center;
+            padding: 32px 16px;
+            line-height: 1.6;
+        }
+
+        .help-page {
+            max-width: 560px;
+            width: 100%;
+        }
+
+        .help-header {
+            text-align: center;
+            margin-bottom: 28px;
+        }
+
+        .help-header h1 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .help-header p {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--accent);
+            margin: 24px 0 10px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 12px;
+        }
+
+        .card h3 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .card p, .card li {
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        .card ul {
+            padding-left: 18px;
+            margin-top: 6px;
+        }
+
+        .card li {
+            margin-bottom: 4px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        .badge-orange { background: rgba(217, 119, 6, 0.15); color: var(--accent); }
+        .badge-green { background: rgba(34, 197, 94, 0.15); color: #22c55e; }
+        .badge-blue { background: rgba(59, 130, 246, 0.15); color: #3b82f6; }
+        .badge-red { background: rgba(239, 68, 68, 0.15); color: #ef4444; }
+
+        .shortcut {
+            display: inline-block;
+            padding: 2px 6px;
+            background: var(--bg-elevated);
+            border: 1px solid var(--border);
+            border-radius: 3px;
+            font-family: 'SF Mono', Menlo, Consolas, monospace;
+            font-size: 11px;
+            color: var(--text-secondary);
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .tip {
+            background: rgba(217, 119, 6, 0.08);
+            border-left: 3px solid var(--accent);
+            padding: 10px 14px;
+            border-radius: 0 6px 6px 0;
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin: 12px 0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 28px;
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+<div class="help-page">
+    <div class="help-header">
+        <h1 data-i18n="appTitle">DOM Extractor Pro</h1>
+        <p data-i18n="helpSubtitle">Prepare web content for AI processing</p>
+    </div>
+
+    <h2 data-i18n="helpCaptureModes">Capture Modes</h2>
+
+    <div class="card">
+        <h3><span class="badge badge-orange" data-i18n="capturePicker">Picker</span></h3>
+        <p data-i18n="helpPickerDesc">Starts a visual element picker. Move the mouse over the page - a blue frame highlights the element under the cursor. Click to capture, ESC to cancel.</p>
+        <p style="margin-top: 6px;" data-i18n="helpPickerIdeal">Ideal for: individual paragraphs, tables, sidebars, specific areas.</p>
+    </div>
+
+    <div class="card">
+        <h3><span class="badge badge-green" data-i18n="captureSelection">Selection</span></h3>
+        <p data-i18n="helpSelectionDesc">Captures currently selected text on the page. First select the desired area, then open the popup and click "Selection".</p>
+        <p style="margin-top: 6px;" data-i18n="helpSelectionIdeal">Ideal for: exact text passages, quotes, individual paragraphs.</p>
+    </div>
+
+    <div class="card">
+        <h3><span class="badge badge-blue" data-i18n="captureFullPage">Full Page</span></h3>
+        <p data-i18n="helpFullPageDesc">Captures the complete DOM of the current page - including all dynamically generated content (Single Page Apps, AJAX-loaded data, etc.). Configured filters are applied afterwards.</p>
+        <p style="margin-top: 6px;" data-i18n="helpFullPageIdeal">Ideal for: complete page capture, dynamic web apps, pages with JavaScript-generated content.</p>
+    </div>
+
+    <div class="card">
+        <h3><span class="badge badge-red" data-i18n="captureSmartExtract">Smart Extract</span></h3>
+        <p data-i18n="helpSmartExtractDesc">Uses readability heuristics to automatically identify the main content. Systematically removes navigation, ads, footers, sidebars, cookie banners, and other non-content elements.</p>
+        <p style="margin-top: 6px;" data-i18n="helpSmartExtractIdeal">Ideal for: news articles, blog posts, documentation pages.</p>
+    </div>
+
+    <h2 data-i18n="helpProfiles">Profiles</h2>
+
+    <div class="card">
+        <h3 data-i18n="helpQuickConfig">Quick Configuration</h3>
+        <ul>
+            <li data-i18n-html="helpProfileAIDesc"><strong>AI-Optimized</strong> - Markdown output, maximum cleanup. All filters active.</li>
+            <li data-i18n-html="helpProfileDevDesc"><strong>Developer</strong> - HTML output, only JS removed. Structure fully preserved.</li>
+            <li data-i18n-html="helpProfileRawDesc"><strong>Minimal</strong> - HTML output, no filters. The DOM as-is.</li>
+            <li data-i18n-html="helpProfileCustomDesc"><strong>Custom</strong> - Automatically saves your manual settings. Click to restore.</li>
+        </ul>
+    </div>
+
+    <h2 data-i18n="helpFormats">Output Formats</h2>
+
+    <div class="grid-2">
+        <div class="card">
+            <h3 data-i18n="formatHTML">Clean HTML</h3>
+            <p data-i18n="helpFormatHTMLDesc">Cleaned HTML with structure. Tables, lists and headings preserved as tags.</p>
+        </div>
+        <div class="card">
+            <h3 data-i18n="formatMarkdown">Markdown</h3>
+            <p data-i18n="helpFormatMDDesc">Tables become pipe tables, headings become # notation, lists become bullet points.</p>
+        </div>
+        <div class="card">
+            <h3 data-i18n="formatText">Plain Text</h3>
+            <p data-i18n="helpFormatTextDesc">Only visible text. Tables are output tab-separated.</p>
+        </div>
+        <div class="card">
+            <h3>JSON</h3>
+            <p data-i18n="helpFormatJSONDesc">Structured tree with tags and text. Tables extracted as arrays with header keys.</p>
+        </div>
+    </div>
+
+    <h2 data-i18n="sectionFilter">Filters</h2>
+
+    <div class="card">
+        <h3 data-i18n="filterJS">Remove JS</h3>
+        <p data-i18n="helpFilterJSDesc">Removes all script tags and event handler attributes. Almost always useful for AI processing.</p>
+    </div>
+    <div class="card">
+        <h3 data-i18n="filterCSS">Remove CSS</h3>
+        <p data-i18n="helpFilterCSSDesc">Removes style tags, stylesheet links, inline styles and class attributes. Massively reduces output.</p>
+    </div>
+    <div class="card">
+        <h3 data-i18n="filterSVG">Remove SVG</h3>
+        <p data-i18n="helpFilterSVGDesc">Removes inline SVG graphics and canvas elements.</p>
+    </div>
+    <div class="card">
+        <h3 data-i18n="filterImages">Remove images</h3>
+        <p data-i18n="helpFilterImagesDesc">When enabled: images are completely removed. When disabled (default): images are replaced with [IMG: alt-text] placeholders.</p>
+    </div>
+    <div class="card">
+        <h3 data-i18n="filterDataAttrs">Data attributes</h3>
+        <p data-i18n="helpFilterDataDesc">Removes data-*, aria-* and role attributes. Unnecessary token overhead for AI processing.</p>
+    </div>
+    <div class="card">
+        <h3 data-i18n="filterEmptyTags">Empty tags</h3>
+        <p data-i18n="helpFilterEmptyDesc">Iteratively removes HTML elements that contain neither text nor children after filtering.</p>
+    </div>
+    <div class="card">
+        <h3 data-i18n="filterNavLinks">Nav links</h3>
+        <p data-i18n="helpFilterNavDesc">Removes navigation elements: nav tags, breadcrumbs, pagination, menus and sidebars.</p>
+    </div>
+    <div class="card">
+        <h3 data-i18n="filterForms">Forms</h3>
+        <p data-i18n="helpFilterFormsDesc">Removes all form elements: form, input, select, textarea, button, fieldset and legend.</p>
+    </div>
+    <div class="card">
+        <h3 data-i18n="filterFlattenDivs">Flatten containers</h3>
+        <p data-i18n="helpFilterFlattenDesc">Reduces nested wrapper elements. A div containing only a single child div gets unwrapped. Saves significant tokens in HTML mode.</p>
+    </div>
+    <div class="card">
+        <h3 data-i18n="filterDuplicates">Duplicate text</h3>
+        <p data-i18n="helpFilterDuplicatesDesc">Detects and removes identical text blocks appearing multiple times. Disabled by default.</p>
+    </div>
+    <div class="card">
+        <h3 data-i18n="filterWhitespace">Normalize whitespace</h3>
+        <p data-i18n="helpFilterWhitespaceDesc">Replaces multiple spaces with single spaces, reduces excessive blank lines, and removes leading whitespace.</p>
+    </div>
+
+    <h2 data-i18n="sectionMaxChars">Max. Characters</h2>
+
+    <div class="card">
+        <p data-i18n="helpMaxCharsDesc">Limits output to a maximum character count. Default: 100,000,000 (practically unlimited).</p>
+    </div>
+
+    <h2 data-i18n="helpPreview">Preview</h2>
+
+    <div class="card">
+        <p data-i18n="helpPreviewDesc">Opens the extraction result in a new tab. In HTML mode, you can switch between rendered view and source code.</p>
+    </div>
+
+    <h2 data-i18n="sectionSnapshots">Snapshots</h2>
+
+    <div class="card">
+        <p data-i18n="helpSnapshotsDesc">Each extraction is automatically saved as a snapshot (max. 10). Click to load, X to delete. Snapshots persist across browser restarts.</p>
+    </div>
+
+    <div class="tip" data-i18n="helpTip">Tip: For best AI preparation, use the "AI-Optimized" profile with Markdown format.</div>
+
+    <div class="footer" id="footerCopyright"></div>
+</div>
+
+<script src="shared/i18n.js"></script>
+<script src="help.js"></script>
+
+</body>
+</html>
