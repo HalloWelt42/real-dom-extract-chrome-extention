@@ -1,0 +1,117 @@
+SPDX-License-Identifier: LicenseRef-DOMExtractorPro-NC-1.0
+
+==============================================================================
+LIZENZ / LICENSE
+DOM Extractor Pro
+==============================================================================
+
+Copyright (c) 2026 HalloWelt42
+https://github.com/HalloWelt42/real-dom-extract-chrome-extention
+
+==============================================================================
+Basislizenz / Base License
+==============================================================================
+
+Dieses Werk ist lizenziert unter der Creative Commons
+Namensnennung - Nicht kommerziell - Keine Bearbeitungen 4.0 International Lizenz.
+
+This work is licensed under the Creative Commons
+Attribution-NonCommercial-NoDerivatives 4.0 International License.
+
+Vollständiger Lizenztext / Full license text:
+https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
+
+==============================================================================
+Zusätzliche Bestimmungen des Urhebers / Additional Terms by Copyright Holder
+==============================================================================
+
+--- 1. Private Änderungen / Private Modifications ---
+
+Abweichend von der ND-Klausel der Basislizenz ist es gestattet, die Software
+für den persönlichen, nicht-kommerziellen Gebrauch zu verändern. Eine
+Weitergabe veränderter Versionen ist ausschließlich unter den Bedingungen
+von Abschnitt 2 (Fork-Regelung) gestattet.
+
+Notwithstanding the ND clause of the base license, you are permitted to modify
+the software for personal, non-commercial use. Distribution of modified
+versions is permitted only under the conditions of Section 2 (Fork Policy).
+
+--- 2. Fork-Regelung / Fork Policy ---
+
+Öffentliche Forks auf GitHub sind unter folgenden Bedingungen gestattet:
+
+Public forks on GitHub are permitted under the following conditions:
+
+a) Der Fork muss den vollständigen und unveränderten Copyright-Hinweis
+   sowie einen Link zum Original-Repository enthalten.
+   The fork must include the complete and unmodified copyright notice
+   and a link to the original repository.
+
+b) Der Fork darf ausschließlich für nicht-kommerzielle Zwecke verwendet werden.
+   The fork may only be used for non-commercial purposes.
+
+c) Der Fork muss klar als abgeleitetes Werk gekennzeichnet sein.
+   The fork must be clearly marked as a derivative work.
+
+d) Spenden-Links und Kryptowährungsadressen des Originalautors dürfen
+   nicht entfernt oder ersetzt werden.
+   Donation links and cryptocurrency addresses of the original author
+   must not be removed or replaced.
+
+e) Forks dürfen nicht in Extension-Stores veröffentlicht werden.
+   Forks may not be published in extension stores.
+
+--- 3. Beendigung / Termination ---
+
+Bei Verstoß gegen eine der genannten Bedingungen erlischt die Lizenz
+automatisch und ohne vorherige Ankündigung.
+
+In case of violation of any of the above conditions, the license terminates
+automatically and without prior notice.
+
+--- 4. Beiträge / Contributions ---
+
+Durch das Einreichen von Pull Requests räumen Beitragende dem Urheber
+ein unwiderrufliches, weltweites, kostenloses Recht ein, den Beitrag
+unter den Bedingungen dieser Lizenz zu verwenden, zu verändern und
+weiterzugeben.
+
+By submitting pull requests, contributors grant the copyright holder an
+irrevocable, worldwide, royalty-free right to use, modify, and distribute
+the contribution under the terms of this license.
+
+--- 5. Urheberrechtsschutz / Copyright Protection ---
+
+Das Entfernen, Verändern oder Verschleiern von Copyright-Hinweisen,
+Lizenzinformationen oder Autorenangaben ist untersagt.
+
+Removal, modification, or obfuscation of copyright notices, license
+information, or author attributions is prohibited.
+
+==============================================================================
+Haftungsausschluss / Disclaimer
+==============================================================================
+
+DIE SOFTWARE WIRD "WIE BESEHEN" BEREITGESTELLT, OHNE JEGLICHE GEWÄHRLEISTUNG,
+WEDER AUSDRÜCKLICH NOCH STILLSCHWEIGEND. DER URHEBER HAFTET NICHT FÜR
+SCHÄDEN, DIE DURCH DIE NUTZUNG DER SOFTWARE ENTSTEHEN.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED. THE COPYRIGHT HOLDER SHALL NOT BE LIABLE FOR ANY DAMAGES ARISING
+FROM THE USE OF THE SOFTWARE.
+
+==============================================================================
+Zusammenfassung / Summary
+==============================================================================
+
+Erlaubt / Allowed:
+  + Persönliche Nutzung
+  + Private Änderungen für eigenen Gebrauch
+  + Forks auf GitHub (mit Quellenangabe, nicht-kommerziell)
+  + Pull Requests an das Original-Repository
+
+Nicht erlaubt / Not allowed:
+  - Kommerzielle Nutzung
+  - Veröffentlichung in Extension-Stores (außer durch den Urheber)
+  - Entfernung von Copyright-Hinweisen oder Spendenlinks
+  - Weitergabe veränderter Versionen außerhalb von GitHub-Forks
