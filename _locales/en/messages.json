@@ -1,0 +1,347 @@
+{
+  "appName": {
+    "message": "DOM Extractor Pro"
+  },
+  "appDescription": {
+    "message": "Extract clean DOM content for AI processing. Multiple output formats, configurable filters."
+  },
+  "appTitle": {
+    "message": "DOM Extractor Pro"
+  },
+
+  "sectionCapture": {
+    "message": "Capture"
+  },
+  "capturePicker": {
+    "message": "Picker"
+  },
+  "capturePickerTitle": {
+    "message": "Select an element on the page"
+  },
+  "captureSelection": {
+    "message": "Selection"
+  },
+  "captureSelectionTitle": {
+    "message": "Capture selected text"
+  },
+  "captureFullPage": {
+    "message": "Full Page"
+  },
+  "captureFullPageTitle": {
+    "message": "Complete DOM of the page"
+  },
+  "captureSmartExtract": {
+    "message": "Smart Extract"
+  },
+  "captureSmartExtractTitle": {
+    "message": "Main content only (without nav, ads, footer)"
+  },
+
+  "sectionProfile": {
+    "message": "Profile"
+  },
+  "profileAI": {
+    "message": "AI-Optimized"
+  },
+  "profileAITitle": {
+    "message": "Maximum cleanup for AI prompts"
+  },
+  "profileDev": {
+    "message": "Developer"
+  },
+  "profileDevTitle": {
+    "message": "Keep HTML structure, remove overhead only"
+  },
+  "profileRaw": {
+    "message": "Minimal"
+  },
+  "profileRawTitle": {
+    "message": "Minimal filters, keep as much as possible"
+  },
+  "profileCustom": {
+    "message": "Custom"
+  },
+  "profileCustomTitle": {
+    "message": "Custom profile - settings are saved"
+  },
+
+  "sectionFormat": {
+    "message": "Output Format"
+  },
+  "formatHTML": {
+    "message": "Clean HTML"
+  },
+  "formatText": {
+    "message": "Plain Text"
+  },
+  "formatJSON": {
+    "message": "JSON (structured)"
+  },
+  "formatMarkdown": {
+    "message": "Markdown"
+  },
+
+  "sectionFilter": {
+    "message": "Filters"
+  },
+  "filterJS": {
+    "message": "Remove JS"
+  },
+  "filterCSS": {
+    "message": "Remove CSS"
+  },
+  "filterSVG": {
+    "message": "Remove SVG"
+  },
+  "filterImages": {
+    "message": "Remove images"
+  },
+  "filterDataAttrs": {
+    "message": "Data attributes"
+  },
+  "filterEmptyTags": {
+    "message": "Empty tags"
+  },
+  "filterNavLinks": {
+    "message": "Nav links"
+  },
+  "filterForms": {
+    "message": "Forms"
+  },
+  "filterFlattenDivs": {
+    "message": "Flatten containers"
+  },
+  "filterDuplicates": {
+    "message": "Duplicate text"
+  },
+  "filterWhitespace": {
+    "message": "Normalize whitespace"
+  },
+
+  "sectionMaxChars": {
+    "message": "Max. Characters"
+  },
+
+  "btnExtract": {
+    "message": "Extract"
+  },
+  "btnCopy": {
+    "message": "Copy"
+  },
+  "btnCopied": {
+    "message": "Copied!"
+  },
+  "btnPreviewTitle": {
+    "message": "Preview in new tab"
+  },
+
+  "sectionSnapshots": {
+    "message": "Snapshots"
+  },
+  "snapshotDeleteTitle": {
+    "message": "Delete"
+  },
+  "snapshotLoaded": {
+    "message": "Snapshot loaded"
+  },
+
+  "statusExtracting": {
+    "message": "Extracting..."
+  },
+  "statusSuccess": {
+    "message": "Successfully extracted"
+  },
+  "statusTruncated": {
+    "message": "(truncated)"
+  },
+  "statusNoContent": {
+    "message": "No content found"
+  },
+  "statusNoSelection": {
+    "message": "No text selected"
+  },
+  "statusPickerResult": {
+    "message": "Picker result loaded"
+  },
+  "statusCopyFailed": {
+    "message": "Copy failed"
+  },
+
+  "themeToggleTitle": {
+    "message": "Toggle theme"
+  },
+  "helpTitle": {
+    "message": "Help"
+  },
+  "donateLabel": {
+    "message": "Say thanks"
+  },
+
+  "statsFormat": {
+    "message": "$1 chars | $2 lines",
+    "placeholders": {
+      "1": { "content": "$1" },
+      "2": { "content": "$2" }
+    }
+  },
+
+  "footerCopyright": {
+    "message": "DOM Extractor Pro v$1 - (c) $2 HalloWelt42",
+    "placeholders": {
+      "1": { "content": "$1" },
+      "2": { "content": "$2" }
+    }
+  },
+
+  "pickerInfoTitle": {
+    "message": "Element Picker"
+  },
+  "pickerInfoHint": {
+    "message": "Click to select -- ESC to cancel"
+  },
+
+  "donateHeadline": {
+    "message": "Made with ❤️ in Sachsen-Anhalt"
+  },
+  "donateDescription": {
+    "message": "Open source from Sachsen-Anhalt. No tracking, no ads, no compromises."
+  },
+  "donateKofi": {
+    "message": "Support on Ko-fi"
+  },
+  "donateCryptoLabel": {
+    "message": "Or by cryptocurrency"
+  },
+  "donateCopyAddress": {
+    "message": "Copy address"
+  },
+  "donateCopied": {
+    "message": "Copied!"
+  },
+  "donateThanks": {
+    "message": "Thank you for your support ❤️"
+  },
+
+  "helpPageTitle": {
+    "message": "Help"
+  },
+  "helpSubtitle": {
+    "message": "Prepare web content for AI processing"
+  },
+
+  "statusError": {
+    "message": "Error"
+  },
+  "statsCharsShort": {
+    "message": "ch."
+  },
+
+  "helpCaptureModes": {
+    "message": "Capture Modes"
+  },
+  "helpPickerDesc": {
+    "message": "Starts a visual element picker. Move the mouse over the page - a blue frame highlights the element under the cursor. Click to capture, ESC to cancel."
+  },
+  "helpPickerIdeal": {
+    "message": "Ideal for: individual paragraphs, tables, sidebars, specific areas."
+  },
+  "helpSelectionDesc": {
+    "message": "Captures currently selected text on the page. First select the desired area, then open the popup and click \"Selection\"."
+  },
+  "helpSelectionIdeal": {
+    "message": "Ideal for: exact text passages, quotes, individual paragraphs."
+  },
+  "helpFullPageDesc": {
+    "message": "Captures the complete DOM of the current page - including all dynamically generated content (Single Page Apps, AJAX-loaded data, etc.). Configured filters are applied afterwards."
+  },
+  "helpFullPageIdeal": {
+    "message": "Ideal for: complete page capture, dynamic web apps, pages with JavaScript-generated content."
+  },
+  "helpSmartExtractDesc": {
+    "message": "Uses readability heuristics to automatically identify the main content. Systematically removes navigation, ads, footers, sidebars, cookie banners, and other non-content elements."
+  },
+  "helpSmartExtractIdeal": {
+    "message": "Ideal for: news articles, blog posts, documentation pages."
+  },
+  "helpProfiles": {
+    "message": "Profiles"
+  },
+  "helpQuickConfig": {
+    "message": "Quick Configuration"
+  },
+  "helpProfileAIDesc": {
+    "message": "<strong>AI-Optimized</strong> - Markdown output, maximum cleanup. All filters active."
+  },
+  "helpProfileDevDesc": {
+    "message": "<strong>Developer</strong> - HTML output, only JS removed. Structure fully preserved."
+  },
+  "helpProfileRawDesc": {
+    "message": "<strong>Minimal</strong> - HTML output, no filters. The DOM as-is."
+  },
+  "helpProfileCustomDesc": {
+    "message": "<strong>Custom</strong> - Automatically saves your manual settings. Click to restore."
+  },
+  "helpFormats": {
+    "message": "Output Formats"
+  },
+  "helpFormatHTMLDesc": {
+    "message": "Cleaned HTML with structure. Tables, lists and headings preserved as tags."
+  },
+  "helpFormatMDDesc": {
+    "message": "Tables become pipe tables, headings become # notation, lists become bullet points."
+  },
+  "helpFormatTextDesc": {
+    "message": "Only visible text. Tables are output tab-separated."
+  },
+  "helpFormatJSONDesc": {
+    "message": "Structured tree with tags and text. Tables extracted as arrays with header keys."
+  },
+  "helpFilterJSDesc": {
+    "message": "Removes all script tags and event handler attributes. Almost always useful for AI processing."
+  },
+  "helpFilterCSSDesc": {
+    "message": "Removes style tags, stylesheet links, inline styles and class attributes. Massively reduces output."
+  },
+  "helpFilterSVGDesc": {
+    "message": "Removes inline SVG graphics and canvas elements."
+  },
+  "helpFilterImagesDesc": {
+    "message": "When enabled: images are completely removed. When disabled (default): replaced with [IMG: alt-text] placeholders."
+  },
+  "helpFilterDataDesc": {
+    "message": "Removes data-*, aria-* and role attributes. Unnecessary token overhead for AI processing."
+  },
+  "helpFilterEmptyDesc": {
+    "message": "Iteratively removes HTML elements that contain neither text nor children after filtering."
+  },
+  "helpFilterNavDesc": {
+    "message": "Removes navigation elements: nav tags, breadcrumbs, pagination, menus and sidebars."
+  },
+  "helpFilterFormsDesc": {
+    "message": "Removes all form elements: form, input, select, textarea, button, fieldset and legend."
+  },
+  "helpFilterFlattenDesc": {
+    "message": "Reduces nested wrapper elements. Saves significant tokens in HTML mode."
+  },
+  "helpFilterDuplicatesDesc": {
+    "message": "Detects and removes identical text blocks appearing multiple times. Disabled by default."
+  },
+  "helpFilterWhitespaceDesc": {
+    "message": "Replaces multiple spaces with single spaces, reduces excessive blank lines."
+  },
+  "helpMaxCharsDesc": {
+    "message": "Limits output to a maximum character count. Default: 100,000,000 (practically unlimited)."
+  },
+  "helpPreview": {
+    "message": "Preview"
+  },
+  "helpPreviewDesc": {
+    "message": "Opens the result in a new tab. In HTML mode, switchable between rendered view and source code."
+  },
+  "helpSnapshotsDesc": {
+    "message": "Each extraction is automatically saved as a snapshot (max. 10). Click to load, X to delete. Persists across browser restarts."
+  },
+  "helpTip": {
+    "message": "Tip: For best AI preparation, use the \"AI-Optimized\" profile with Markdown format."
+  }
+}

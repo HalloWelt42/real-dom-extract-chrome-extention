@@ -1,0 +1,347 @@
+{
+  "appName": {
+    "message": "DOM Extractor Pro"
+  },
+  "appDescription": {
+    "message": "Extrahiere sauberen DOM-Content für KI-Verarbeitung. Mehrere Output-Formate, konfigurierbare Filter."
+  },
+  "appTitle": {
+    "message": "DOM Extractor Pro"
+  },
+
+  "sectionCapture": {
+    "message": "Erfassung"
+  },
+  "capturePicker": {
+    "message": "Picker"
+  },
+  "capturePickerTitle": {
+    "message": "Element auf der Seite auswählen"
+  },
+  "captureSelection": {
+    "message": "Markierung"
+  },
+  "captureSelectionTitle": {
+    "message": "Markierten Text erfassen"
+  },
+  "captureFullPage": {
+    "message": "Ganze Seite"
+  },
+  "captureFullPageTitle": {
+    "message": "Kompletter DOM der Seite"
+  },
+  "captureSmartExtract": {
+    "message": "Smart-Extrakt"
+  },
+  "captureSmartExtractTitle": {
+    "message": "Nur Hauptinhalt (ohne Nav, Ads, Footer)"
+  },
+
+  "sectionProfile": {
+    "message": "Profil"
+  },
+  "profileAI": {
+    "message": "KI-Optimiert"
+  },
+  "profileAITitle": {
+    "message": "Maximale Bereinigung für KI-Prompts"
+  },
+  "profileDev": {
+    "message": "Entwickler"
+  },
+  "profileDevTitle": {
+    "message": "HTML-Struktur erhalten, nur Overhead entfernen"
+  },
+  "profileRaw": {
+    "message": "Minimal"
+  },
+  "profileRawTitle": {
+    "message": "Minimale Filter, möglichst viel erhalten"
+  },
+  "profileCustom": {
+    "message": "Eigenes"
+  },
+  "profileCustomTitle": {
+    "message": "Eigenes Profil - Einstellungen werden gespeichert"
+  },
+
+  "sectionFormat": {
+    "message": "Ausgabeformat"
+  },
+  "formatHTML": {
+    "message": "Clean HTML"
+  },
+  "formatText": {
+    "message": "Reiner Text"
+  },
+  "formatJSON": {
+    "message": "JSON (strukturiert)"
+  },
+  "formatMarkdown": {
+    "message": "Markdown"
+  },
+
+  "sectionFilter": {
+    "message": "Filter"
+  },
+  "filterJS": {
+    "message": "JS entfernen"
+  },
+  "filterCSS": {
+    "message": "CSS entfernen"
+  },
+  "filterSVG": {
+    "message": "SVG entfernen"
+  },
+  "filterImages": {
+    "message": "Bilder entfernen"
+  },
+  "filterDataAttrs": {
+    "message": "Data-Attribute"
+  },
+  "filterEmptyTags": {
+    "message": "Leere Tags"
+  },
+  "filterNavLinks": {
+    "message": "Nav-Links"
+  },
+  "filterForms": {
+    "message": "Formulare"
+  },
+  "filterFlattenDivs": {
+    "message": "Container flach"
+  },
+  "filterDuplicates": {
+    "message": "Doppelte Texte"
+  },
+  "filterWhitespace": {
+    "message": "Whitespace normalisieren"
+  },
+
+  "sectionMaxChars": {
+    "message": "Max. Zeichen"
+  },
+
+  "btnExtract": {
+    "message": "Extrahieren"
+  },
+  "btnCopy": {
+    "message": "Kopieren"
+  },
+  "btnCopied": {
+    "message": "Kopiert!"
+  },
+  "btnPreviewTitle": {
+    "message": "Vorschau in neuem Tab"
+  },
+
+  "sectionSnapshots": {
+    "message": "Snapshots"
+  },
+  "snapshotDeleteTitle": {
+    "message": "Löschen"
+  },
+  "snapshotLoaded": {
+    "message": "Snapshot geladen"
+  },
+
+  "statusExtracting": {
+    "message": "Wird extrahiert..."
+  },
+  "statusSuccess": {
+    "message": "Erfolgreich extrahiert"
+  },
+  "statusTruncated": {
+    "message": "(gekürzt)"
+  },
+  "statusNoContent": {
+    "message": "Kein Content gefunden"
+  },
+  "statusNoSelection": {
+    "message": "Kein Text markiert"
+  },
+  "statusPickerResult": {
+    "message": "Picker-Ergebnis geladen"
+  },
+  "statusCopyFailed": {
+    "message": "Kopieren fehlgeschlagen"
+  },
+
+  "themeToggleTitle": {
+    "message": "Theme wechseln"
+  },
+  "helpTitle": {
+    "message": "Anleitung"
+  },
+  "donateLabel": {
+    "message": "Danke sagen"
+  },
+
+  "statsFormat": {
+    "message": "$1 Zeichen | $2 Zeilen",
+    "placeholders": {
+      "1": { "content": "$1" },
+      "2": { "content": "$2" }
+    }
+  },
+
+  "footerCopyright": {
+    "message": "DOM Extractor Pro v$1 - (c) $2 HalloWelt42",
+    "placeholders": {
+      "1": { "content": "$1" },
+      "2": { "content": "$2" }
+    }
+  },
+
+  "pickerInfoTitle": {
+    "message": "Element-Picker"
+  },
+  "pickerInfoHint": {
+    "message": "Klicken zum Auswählen -- ESC zum Abbrechen"
+  },
+
+  "donateHeadline": {
+    "message": "Made with ❤️ in Sachsen-Anhalt"
+  },
+  "donateDescription": {
+    "message": "Open Source aus Sachsen-Anhalt. Kein Tracking, keine Werbung, keine Kompromisse."
+  },
+  "donateKofi": {
+    "message": "Auf Ko-fi unterstützen"
+  },
+  "donateCryptoLabel": {
+    "message": "Oder per Kryptowährung"
+  },
+  "donateCopyAddress": {
+    "message": "Adresse kopieren"
+  },
+  "donateCopied": {
+    "message": "Kopiert!"
+  },
+  "donateThanks": {
+    "message": "Danke für deine Unterstützung ❤️"
+  },
+
+  "helpPageTitle": {
+    "message": "Anleitung"
+  },
+  "helpSubtitle": {
+    "message": "Webseiten-Inhalte für KI-Verarbeitung aufbereiten"
+  },
+
+  "statusError": {
+    "message": "Fehler"
+  },
+  "statsCharsShort": {
+    "message": "Z."
+  },
+
+  "helpCaptureModes": {
+    "message": "Erfassungsmodi"
+  },
+  "helpPickerDesc": {
+    "message": "Startet einen visuellen Element-Picker. Bewege die Maus über die Seite - ein blauer Rahmen markiert das Element unter dem Cursor. Klick zum Erfassen, ESC zum Abbrechen."
+  },
+  "helpPickerIdeal": {
+    "message": "Ideal für: einzelne Absätze, Tabellen, Seitenleisten, bestimmte Bereiche."
+  },
+  "helpSelectionDesc": {
+    "message": "Erfasst den aktuell markierten Text auf der Seite. Zuerst Text markieren, dann Popup öffnen und \"Markierung\" klicken."
+  },
+  "helpSelectionIdeal": {
+    "message": "Ideal für: exakte Textpassagen, Zitate, einzelne Paragraphen."
+  },
+  "helpFullPageDesc": {
+    "message": "Erfasst den kompletten DOM der aktuellen Seite - inklusive aller dynamisch erzeugten Inhalte (Single Page Apps, nachgeladene Daten etc.). Filter werden anschliessend angewandt."
+  },
+  "helpFullPageIdeal": {
+    "message": "Ideal für: vollständige Seitenerfassung, dynamische Webapps, JavaScript-generierter Content."
+  },
+  "helpSmartExtractDesc": {
+    "message": "Verwendet eine Readability-Heuristik um den Hauptinhalt automatisch zu erkennen. Entfernt systematisch Navigation, Werbung, Footer, Sidebars, Cookie-Banner und andere Nicht-Inhalts-Elemente."
+  },
+  "helpSmartExtractIdeal": {
+    "message": "Ideal für: Nachrichtenartikel, Blogposts, Dokumentationsseiten."
+  },
+  "helpProfiles": {
+    "message": "Profile"
+  },
+  "helpQuickConfig": {
+    "message": "Schnellkonfiguration"
+  },
+  "helpProfileAIDesc": {
+    "message": "<strong>KI-Optimiert</strong> - Markdown-Ausgabe, maximale Bereinigung. Alle Filter aktiv."
+  },
+  "helpProfileDevDesc": {
+    "message": "<strong>Entwickler</strong> - HTML-Ausgabe, nur JS entfernt. Struktur vollständig erhalten."
+  },
+  "helpProfileRawDesc": {
+    "message": "<strong>Minimal</strong> - HTML-Ausgabe, keine Filter. Der DOM wie er ist."
+  },
+  "helpProfileCustomDesc": {
+    "message": "<strong>Eigenes</strong> - Speichert automatisch deine manuellen Einstellungen. Bei Klick wiederherstellen."
+  },
+  "helpFormats": {
+    "message": "Ausgabeformate"
+  },
+  "helpFormatHTMLDesc": {
+    "message": "Bereinigtes HTML mit Struktur. Tabellen, Listen und Überschriften bleiben als Tags erhalten."
+  },
+  "helpFormatMDDesc": {
+    "message": "Tabellen werden zu Pipe-Tabellen, Überschriften zu #-Notation, Listen zu Aufzählungen."
+  },
+  "helpFormatTextDesc": {
+    "message": "Nur der sichtbare Text. Tabellen werden Tab-separiert ausgegeben."
+  },
+  "helpFormatJSONDesc": {
+    "message": "Strukturierter Baum mit Tags und Text. Tabellen als Arrays mit Header-Keys."
+  },
+  "helpFilterJSDesc": {
+    "message": "Entfernt alle Script-Tags und Event-Handler-Attribute. Für KI-Verarbeitung fast immer sinnvoll."
+  },
+  "helpFilterCSSDesc": {
+    "message": "Entfernt Style-Tags, Stylesheet-Links, Inline-Styles und class-Attribute. Reduziert die Ausgabe massiv."
+  },
+  "helpFilterSVGDesc": {
+    "message": "Entfernt Inline SVG-Grafiken und Canvas-Elemente."
+  },
+  "helpFilterImagesDesc": {
+    "message": "Wenn aktiviert: Bilder komplett entfernt. Wenn deaktiviert (Standard): durch [IMG: alt-text] Platzhalter ersetzt."
+  },
+  "helpFilterDataDesc": {
+    "message": "Entfernt data-*, aria-* und role-Attribute. Unnötiger Token-Overhead für KI-Verarbeitung."
+  },
+  "helpFilterEmptyDesc": {
+    "message": "Entfernt iterativ HTML-Elemente die nach dem Filtern weder Text noch Kinder enthalten."
+  },
+  "helpFilterNavDesc": {
+    "message": "Entfernt Navigationselemente: nav-Tags, Breadcrumbs, Paginierung, Menüs und Sidebars."
+  },
+  "helpFilterFormsDesc": {
+    "message": "Entfernt alle Formular-Elemente: form, input, select, textarea, button, fieldset und legend."
+  },
+  "helpFilterFlattenDesc": {
+    "message": "Reduziert verschachtelte Wrapper-Elemente. Spart erheblich Tokens im HTML-Modus."
+  },
+  "helpFilterDuplicatesDesc": {
+    "message": "Erkennt und entfernt identische Textblöcke die mehrfach vorkommen. Standardmässig deaktiviert."
+  },
+  "helpFilterWhitespaceDesc": {
+    "message": "Ersetzt mehrfache Leerzeichen durch einzelne, reduziert überflüssige Leerzeilen."
+  },
+  "helpMaxCharsDesc": {
+    "message": "Begrenzt die Ausgabe auf eine maximale Zeichenzahl. Standard: 100.000.000 (praktisch unbegrenzt)."
+  },
+  "helpPreview": {
+    "message": "Vorschau"
+  },
+  "helpPreviewDesc": {
+    "message": "Öffnet das Ergebnis in neuem Tab. Im HTML-Modus umschaltbar zwischen gerenderter Ansicht und Quellcode."
+  },
+  "helpSnapshotsDesc": {
+    "message": "Jede Extraktion wird als Snapshot gespeichert (max. 10). Klick zum Laden, X zum Löschen. Bleiben über Browser-Neustarts erhalten."
+  },
+  "helpTip": {
+    "message": "Tipp: Für die beste KI-Aufbereitung nutze das Profil \"KI-Optimiert\" mit dem Markdown-Format."
+  }
+}
