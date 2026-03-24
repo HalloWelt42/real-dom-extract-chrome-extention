@@ -25,10 +25,12 @@ document.getElementById('iconProfileDev').innerHTML = icon('laptop-code');
 document.getElementById('iconProfileRaw').innerHTML = icon('file-code');
 document.getElementById('iconProfileCustom').innerHTML = icon('sliders');
 document.getElementById('helpBtn').innerHTML = icon('circle-exclamation');
+document.getElementById('iconGithub').innerHTML = icon('github');
 document.getElementById('iconDonate').innerHTML = icon('heart');
 extractBtn.innerHTML = icon('download', 'icon-btn') + ' ' + i18n('btnExtract');
 copyBtn.innerHTML = icon('copy', 'icon-btn') + ' ' + i18n('btnCopy');
-document.getElementById('footerCopyright').textContent = i18n('footerCopyright', ['1.0.0', new Date().getFullYear().toString()]);
+var manifest = chrome.runtime.getManifest();
+document.getElementById('footerCopyright').textContent = i18n('footerCopyright', [manifest.version, new Date().getFullYear().toString()]);
 previewBtn.innerHTML = icon('expand', 'icon-btn');
 
 // ============================================
@@ -430,6 +432,11 @@ chrome.storage.local.get(['pendingPicker'], (result) => {
 // ============================================
 // SPENDEN
 // ============================================
+document.getElementById('githubBtn').addEventListener('click', (e) => {
+    e.preventDefault();
+    chrome.tabs.create({ url: 'https://github.com/HalloWelt42/real-dom-extract-chrome-extention' });
+});
+
 document.getElementById('helpBtn').addEventListener('click', (e) => {
     e.preventDefault();
     chrome.tabs.create({ url: chrome.runtime.getURL('help.html') });

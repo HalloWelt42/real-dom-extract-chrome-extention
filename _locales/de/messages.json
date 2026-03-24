@@ -106,7 +106,7 @@
     "message": "Nav-Links"
   },
   "filterForms": {
-    "message": "Formulare"
+    "message": "Formulare entfernen"
   },
   "filterFlattenDivs": {
     "message": "Container flach"
@@ -186,7 +186,7 @@
   },
 
   "footerCopyright": {
-    "message": "DOM Extractor Pro v$1 - (c) $2 HalloWelt42",
+    "message": "DOM Extractor Pro v$1 - \u00a9 $2 HalloWelt42",
     "placeholders": {
       "1": { "content": "$1" },
       "2": { "content": "$2" }

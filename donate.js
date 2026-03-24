@@ -3,7 +3,7 @@
 // Copyright dynamisch setzen
 var copyrightEl = document.getElementById('footerCopyright');
 if (copyrightEl) {
-    copyrightEl.textContent = i18n('footerCopyright', ['1.0.0', new Date().getFullYear().toString()]);
+    copyrightEl.textContent = i18n('footerCopyright', [chrome.runtime.getManifest().version, new Date().getFullYear().toString()]);
 }
 
 // Crypto-Tabs umschalten

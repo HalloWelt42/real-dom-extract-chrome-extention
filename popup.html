@@ -324,6 +324,29 @@
         }
 
         .btn-donate:hover { color: #fff; background: var(--error); border-color: var(--error); }
+
+        .footer-links {
+            display: flex;
+            gap: 8px;
+        }
+
+        .btn-github {
+            padding: 5px 10px;
+            background: none;
+            color: var(--text-muted);
+            border: 1px solid var(--border-subtle);
+            border-radius: 4px;
+            font-size: 11px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            white-space: nowrap;
+            transition: all 0.15s;
+        }
+
+        .btn-github:hover { color: var(--text); border-color: var(--text); }
     </style>
 </head>
 <body>
@@ -461,9 +484,14 @@
 
 <div class="footer">
     <span class="footer-version" id="footerCopyright"></span>
-    <a class="btn-donate" id="donateBtn" href="#" data-i18n-title="donateLabel">
-        <span id="iconDonate"></span> <span data-i18n="donateLabel">Say thanks</span>
-    </a>
+    <div class="footer-links">
+        <a class="btn-github" id="githubBtn" href="#" title="GitHub">
+            <span id="iconGithub"></span> GitHub
+        </a>
+        <a class="btn-donate" id="donateBtn" href="#" data-i18n-title="donateLabel">
+            <span id="iconDonate"></span> <span data-i18n="donateLabel">Say thanks</span>
+        </a>
+    </div>
 </div>
 
 <script src="shared/i18n.js"></script>
