@@ -135,4 +135,4 @@ Nicht erlaubt:
 
 ---
 
-DOM Extractor Pro v1.0.0 - (c) 2026 HalloWelt42
+DOM Extractor Pro - © 2026 HalloWelt42
